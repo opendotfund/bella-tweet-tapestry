@@ -5,28 +5,34 @@ import { Twitter } from 'lucide-react';
 const ProfileHeader = () => {
   return (
     <div className="w-full bg-twitter-extraLightGray rounded-lg overflow-hidden shadow-md mb-8 animate-fade-in">
-      <div className="h-40 bg-twitter-blue"></div>
+      <div className="h-40 bg-twitter-blue">
+        <img 
+          src="https://pbs.twimg.com/profile_banners/1657384537463152641/1714489683/1500x500" 
+          alt="BellaBuysDips banner" 
+          className="w-full h-full object-cover"
+        />
+      </div>
       <div className="p-6 relative">
         <div className="absolute -top-16 left-6 border-4 border-white rounded-full overflow-hidden">
           <img 
-            src="https://pbs.twimg.com/profile_images/1662889299457503232/8e5nKcQU_400x400.jpg" 
+            src="https://pbs.twimg.com/profile_images/1785052517082116096/GpPVGo-R_400x400.jpg" 
             alt="BellaBuysDips profile" 
             className="w-32 h-32 object-cover"
           />
         </div>
         <div className="mt-20 md:flex md:justify-between md:items-end">
           <div>
-            <h1 className="text-2xl font-bold text-twitter-black">BellaBuysDips</h1>
+            <h1 className="text-2xl font-bold text-twitter-black">Bella</h1>
             <p className="text-twitter-darkGray">@bellabuysdips</p>
             <p className="mt-2 text-twitter-black">
-              Dip enjoyer. Mother Russia enthusiast. Crypto trader. Not financial advice.
+              russian girlie who enjoys buying ze dips 🇷🇺 | not financial advice
             </p>
             <div className="flex items-center mt-3 space-x-4">
               <span className="text-twitter-darkGray">
-                <span className="font-bold text-twitter-black">3.2k</span> Following
+                <span className="font-bold text-twitter-black">690</span> Following
               </span>
               <span className="text-twitter-darkGray">
-                <span className="font-bold text-twitter-black">12.8k</span> Followers
+                <span className="font-bold text-twitter-black">9,175</span> Followers
               </span>
             </div>
           </div>
