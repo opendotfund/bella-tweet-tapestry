@@ -17,7 +17,7 @@ export const russianLocations: Location[] = [
     id: "2",
     name: "Peterhof Palace",
     description: "Known as the 'Russian Versailles', this magnificent palace complex features stunning gardens, golden statues, and spectacular fountains. It's a UNESCO World Heritage Site located near Saint Petersburg.",
-    image: "https://images.unsplash.com/photo-1552890635-77ad432e1438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    image: "https://images.unsplash.com/photo-1566224425427-998683854ad2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
   },
   {
     id: "3",
@@ -29,7 +29,7 @@ export const russianLocations: Location[] = [
     id: "4",
     name: "Moscow Kremlin",
     description: "A historic fortified complex in the heart of Moscow, serving as the official residence of the President of Russia. It features beautiful cathedrals, palaces, and the famous Kremlin Wall with its distinctive red towers.",
-    image: "https://images.unsplash.com/photo-1578980564188-15e3bb2bf2ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    image: "https://images.unsplash.com/photo-1520106212299-d99c443e4568?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
   },
   {
     id: "5",
