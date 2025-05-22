@@ -1,21 +1,36 @@
 
 import { useState, useEffect } from 'react';
 import ProfileHeader from '@/components/ProfileHeader';
-import TweetCard from '@/components/TweetCard';
-import { tweets } from '@/data/tweets';
 import Navbar from '@/components/Navbar';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
+import EmbeddedTweet from '@/components/EmbeddedTweet';
+
+// Tweet IDs from the provided URLs
+const tweetIds = [
+  '1864142190861025413',
+  '1919791693232033796',
+  '1902864625559073062',
+  '1880332667855729152',
+  '1870711545790906704',
+  '1864895712334418293',
+  '1864875176711664101'
+];
 
 const Index = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredTweets, setFilteredTweets] = useState(tweets);
+  const [filteredTweetIds, setFilteredTweetIds] = useState(tweetIds);
 
+  // Filter tweets based on ID for now (since we can't search content of embedded tweets)
   useEffect(() => {
-    const results = tweets.filter(tweet => 
-      tweet.content.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setFilteredTweets(results);
+    if (searchTerm.trim() === '') {
+      setFilteredTweetIds(tweetIds);
+    } else {
+      const filtered = tweetIds.filter(id => 
+        id.includes(searchTerm)
+      );
+      setFilteredTweetIds(filtered);
+    }
   }, [searchTerm]);
 
   return (
@@ -31,18 +46,18 @@ const Index = () => {
           </div>
           <Input 
             type="text" 
-            placeholder="Search tweets..." 
+            placeholder="Filter tweets by ID..." 
             className="pl-10 border-twitter-lightGray focus:border-twitter-blue"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
         
-        {/* Tweet List */}
+        {/* Embedded Tweets */}
         <div className="max-w-2xl mx-auto">
-          {filteredTweets.length > 0 ? (
-            filteredTweets.map(tweet => (
-              <TweetCard key={tweet.id} tweet={tweet} />
+          {filteredTweetIds.length > 0 ? (
+            filteredTweetIds.map(tweetId => (
+              <EmbeddedTweet key={tweetId} tweetId={tweetId} />
             ))
           ) : (
             <div className="text-center py-8 text-twitter-darkGray">

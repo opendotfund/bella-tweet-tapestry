@@ -9,10 +9,10 @@ const Motherland = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section - Updated the image */}
       <div className="relative h-[60vh] overflow-hidden">
         <img 
-          src="https://images.unsplash.com/photo-1547448415-e9f5b28e570d?auto=format&fit=crop&q=80&w=2070" 
+          src="https://images.unsplash.com/photo-1519682577862-22b62b24e493?auto=format&fit=crop&q=80&w=2070" 
           alt="Russian landscape" 
           className="w-full h-full object-cover"
         />
