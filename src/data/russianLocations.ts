@@ -17,7 +17,7 @@ export const russianLocations: Location[] = [
     id: "2",
     name: "Peterhof Palace",
     description: "Known as the 'Russian Versailles', this magnificent palace complex features stunning gardens, golden statues, and spectacular fountains. It's a UNESCO World Heritage Site located near Saint Petersburg.",
-    image: "https://images.unsplash.com/photo-1566224425427-998683854ad2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=6000&q=80"
   },
   {
     id: "3",
